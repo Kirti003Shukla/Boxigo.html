@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Boxigo Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .bgcolor{
+        background-color:#004d99; color:white;
+    }
+    
+    .border{
+        border:1px solid black;
+    }
+    
+    .text_color{
+        color:#2B60DE;
+    }
+    
+.arrow {
+    width:214px;margin:auto;margin-top:-50px;
+}
+
+.line {
+    margin-top:-5px;
+    width:199px;
+    background:blue;
+    height:3px;    
+    float:left;
+}
+.point {	
+    width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 15px solid blue;
+        margin-left:199px;margin-top:-10px;
+}
+.borderprop{
+    border:1px solid grey;width:80px;
+}
+.borderprop1{
+    border:2px solid orange;padding: 5px;
+}
+.borderprop2{
+    border:2px solid green;padding: 5px;
+}
+.borderprop3{
+    border:1px solid grey;width:160px;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+}
+.flex-container > div {text-align: center;
+  background-color: #f1f1f1;
+  margin: 3px;
+  padding: 5px;
+  font-size: 15px;
+}div{font-size:13px;}
+</style>
+
+    </head>
+    <body>
+        <div class="container" style="width:1200px;" >
+            <header class="bgcolor"><h3>My Move Plans</h3>
+            </header>
+        </div>
+        <div class="container border">
+            <a href="#" style="text-decoration: underline;">BX1255</a><br>
+            <img src="house-256.png" height="60" width="60" alt="home">
+            <div style="display:inline-block;"><span style="margin-bottom: 12px;">House</span><br><span>2 BHK</span>
+            </div>
+             <div style="text-align:center;display:inline-block;margin-left:225px;margin-top:10px;margin-bottom:-10px;"><span>Bengaluru</span><br>
+             <span class="text-muted">HSR Layout</span></div>
+<!-- for arrow -->
+<div class="arrow">
+         <span  class="text_color" style="">Jul 13 at 07:00 PM
+         </span>
+         <div class="line"></div>
+         <div class="point"></div>
+</div>
+
+<div style="text-align:center;display:inline-block;margin-top:-20px;margin-left:750px;"><span>Hyderabad</span><br>
+    <span class="text-muted">Mehandipattanam</span>
+</div>
+ <div class="row"><!-- for view move details button -->
+    <div class="col text-center">
+      <button class="btn btn-default bgcolor" onclick="show('id1');">View Move Details</button>
+    </div>
+  </div>
+  <h4 class="text-right" style="margin-left:1015px; margin-top:-30px;"><b>In Transit</b></h4>
+
+            <hr style="margin-left: -15px;margin-right: -15px;"><!-- for horizontal line at the bottom -->
+   <div style="display:inline-block;">
+                <span>Order Date:<span class="text_color">Jul 13 at 07:00 PM</span>
+                </span>
+                <span style="margin-left:651px;">Vendor: <span class="text_color">Pan Packers</span>
+                    Order Total:<span class="text_color">25,000</span>
+                </span>
+   </div>
+</div>
+        <br> <!-- for first view more details -->
+        
+<div class="container" id="id1" style="display:none"><!-- for expand view of button -->
+            <div class="container border"><a href="#" style="text-decoration: underline;">BX1255</a><br>
+            <img src="house-256.png" height="60" width="60" alt="home">
+            <div style="display:inline-block;"><span style="margin-bottom: 12px;">House</span><br><span>1 BHK</span>
+            </div>
+  <div style="text-align:center;display:inline-block;margin-left:225px;margin-top:10px;margin-bottom:-10px;">
+      <span>Bengaluru</span><br><span class="text-muted">HSR Layout</span>
+  </div>
+
+<!-- for arrow -->
+<div class="arrow">
+     <span  class="text_color" style="">Jul 13 at 07:00 PM
+     </span>
+
+<div class="line"></div>
+<div class="point"></div>
+</div>
+
+<div style="text-align:center;display:inline-block;margin-top:-20px;margin-left:750px;"><span>Hyderabad</span><br><span class="text-muted">Mehandipattanam</span>
+</div>
+<h4 class="text-right" style="margin-left:1015px; margin-top:-30px;">View Quote</h4>
+                     <hr style="margin-left: -15px;margin-right: -15px;"><!-- for horizontal line at the bottom -->
+            <div style="display:inline-block;">
+                <span>Order Date:<span class="text_color">Jul 13 at 07:00 PM</span>
+                </span>
+                <span style="margin-left:651px;">Vendor: <span class="text_color">Pan Packers</span>
+                    Order Total:<span class="text_color">25,000</span>
+                </span>
+            </div>
+   
+</div>
+            <div class="container"><div class="container borderprop1">
+                <header class="bgcolor"><h4><span class="text-left">Item details</span><span style="float:right;">Edit</span>
+                    </h4>
+               </header>
+                <div class="row" style="font-size:13px;">
+                    <div class="col-md-6"><p class="borderprop">Living room</p>
+<div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+                    
+ <div class="col-md-6"><p class="borderprop">Other</p>
+         <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div></div>
+
+                </div>
+ <div class="row">
+                    <div class="col-md-6"><p class="borderprop">Bedroom</p>
+                        <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+                    
+ 
+                </div>
+ <div class="row">
+                    <div class="col-md-6"><p class="borderprop">Kitchen</p>
+                        <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+</div>                
+        </div>
+            </div>
+    <br>
+        <div class="row">
+                <div class="col-md-6"><span class="borderprop3"> Detail of existing house </span><span> &nbsp;
+Floor No </span><span> &nbsp;
+4 </span><span>&nbsp;Bevator &nbsp;</span>
+                    <span class="borderprop2"> Yes </span></div>
+                <div class="col-md-6"><span> Packing &nbsp;
+</span><span class="borderprop2"> Yes &nbsp;</span><span> &nbsp;Approx distance door to truck parking&nbsp; </span>
+                    <span class="borderprop2"> 50 </span><span class="borderprop2"> Meter </span></div>
+
+        </div>
+    <br>
+        <div class="row">
+                <div class="col-md-6"><span class="borderprop3"> Detail of new house &nbsp;&nbsp;&nbsp;</span>
+                    <span> &nbsp; Floor No &nbsp; </span><span>  &nbsp;4 &nbsp;</span>
+                    <span> &nbsp;Bevator &nbsp;</span>
+                    <span class="borderprop2"> &nbsp;Yes </span>
+                </div>
+               <div class="col-md-6"><span> Packing&nbsp;
+</span><span class="borderprop2"> Yes &nbsp;&nbsp; </span><span> &nbsp;Approx distance door to truck parking &nbsp;</span>
+                    <span class="borderprop2"> 50 </span><span class="borderprop2"> Meter </span>
+               </div>
+
+        </div><br>
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-default bgcolor" onclick="hide('id1');">Back to my move plan</button>
+    </div>
+  </div>
+
+ </div>
+        <br>     <br>
+<div class="container border"><a href="#" style="text-decoration: underline;">BX1255</a><br>
+            <img src="house-256.png" height="60" width="60" alt="home">
+            <div style="display:inline-block;"><span style="margin-bottom: 12px;">House</span><br><span>3 BHK</span>
+            </div>
+  <div style="text-align:center;display:inline-block;margin-left:225px;margin-top:10px;margin-bottom:-10px;">
+      <span>Bengaluru</span><br><span class="text-muted">HSR Layout</span></div>
+
+<!-- for arrow -->
+<div class="arrow">
+    <span  class="text_color" style="">Jul 13 at 07:00 PM
+    </span>
+<div class="line"></div>
+<div class="point"></div>
+</div>
+<div style="text-align:center;display:inline-block;margin-top:-20px;margin-left:750px;">
+    <span>Pune</span><br><span class="text-muted">Mehandipattanam</span>
+</div>
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-default bgcolor" onclick="show('id2');">View Move Details</button>
+    </div>
+  </div><h4 class="text-right" style="margin-left:1015px; margin-top:-30px;"><b>Cancelled</b></h4>
+
+            <hr style="margin-left: -15px;margin-right: -15px;"><!-- for horizontal line at the bottom -->
+            <div style="display:inline-block;">
+                <span>Order Date:<span class="text_color">Jul 13 at 07:00 PM</span>
+                </span>
+                <span style="margin-left:651px;">Vendor: <span class="text_color">Pan Packers</span>
+                    Order Total:<span class="text_color">25,000</span>
+                </span>
+            </div>
+                </div>
+        <br><!--for second view more details-->
+         <div class="container" id="id2" style="display:none"><!-- for expand view of button -->
+            <div class="container border"><a href="#" style="text-decoration: underline;">BX1255</a><br>
+            <img src="house-256.png" height="60" width="60" alt="home">
+            <div style="display:inline-block;"><span style="margin-bottom: 12px;">House</span><br><span>1 BHK</span>
+            </div>
+  <div style="text-align:center;display:inline-block;margin-left:225px;margin-top:10px;margin-bottom:-10px;"><span>Bengaluru</span><br><span class="text-muted">HSR Layout</span></div>
+
+
+<div class="arrow">
+                      <span  class="text_color" style="">Jul 13 at 07:00 PM
+</span>
+
+<div class="line"></div>
+<div class="point"></div>
+</div>
+<div style="text-align:center;display:inline-block;margin-top:-20px;margin-left:750px;">
+    <span>Pune</span><br><span class="text-muted">Mehandipattanam</span>
+</div>
+  <h4 class="text-right" style="margin-left:1015px; margin-top:-30px;">View Quote</h4>
+                     <hr style="margin-left: -15px;margin-right: -15px;"><!-- for horizontal line at the bottom -->
+            <div style="display:inline-block;">
+                <span>Order Date:<span class="text_color">Jul 13 at 07:00 PM</span>
+                </span>
+                <span style="margin-left:651px;">Vendor: <span class="text_color">Pan Packers</span>
+                    Order Total:<span class="text_color">25,000</span>
+                </span>
+            </div>
+   
+</div>
+            <div class="container">
+                <div class="container borderprop1">
+                <header class="bgcolor">
+                    <h4><span class="text-left">Item details</span><span style="float:right;">Edit</span>
+                    </h4>
+                </header>
+                <div class="row" style="font-size:13px;">
+                    <div class="col-md-6"><p class="borderprop">Living room</p>
+                    <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+                    
+ <div class="col-md-6"><p class="borderprop">Other</p>
+         <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+ </div>
+
+</div>
+                    
+ <div class="row">
+             <div class="col-md-6">
+                 <p class="borderprop">Bedroom</p>
+               <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+</div>
+                    
+ <div class="row">
+                    <div class="col-md-6"><p class="borderprop">Kitchen</p>
+                        <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+</div>                
+</div>
+</div>
+             <br>      
+        <div class="row">
+                <div class="col-md-6"><span class="borderprop3"> Detail of existing house </span><span> &nbsp;
+Floor No </span><span> &nbsp;
+4 </span><span>&nbsp;Bevator &nbsp;</span>
+                    <span class="borderprop2"> Yes </span></div>
+                <div class="col-md-6"><span> Packing &nbsp;
+</span><span class="borderprop2"> Yes &nbsp;</span><span> &nbsp;Approx distance door to truck parking&nbsp; </span>
+                    <span class="borderprop2"> 50 </span><span class="borderprop2"> Meter </span></div>
+
+        </div>
+    <br>
+        <div class="row">
+                <div class="col-md-6"><span class="borderprop3"> Detail of new house &nbsp;&nbsp;&nbsp;</span>
+                    <span> &nbsp; Floor No &nbsp; </span><span>  &nbsp;4 &nbsp;</span>
+                    <span> &nbsp;Bevator &nbsp;</span>
+                    <span class="borderprop2"> &nbsp;Yes </span>
+                </div>
+               <div class="col-md-6"><span> Packing&nbsp;
+</span><span class="borderprop2"> Yes &nbsp;&nbsp; </span><span> &nbsp;Approx distance door to truck parking &nbsp;</span>
+                    <span class="borderprop2"> 50 </span><span class="borderprop2"> Meter </span>
+               </div>
+
+        </div><br>
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-default bgcolor" onclick="hide('id2');">Back to my move plan</button>
+    </div>
+  </div>
+
+  </div>
+   
+        <br>
+        <div class="container border"><a href="#" style="text-decoration: underline;">BX1255</a><br>
+            <img src="house-256.png" height="60" width="60" alt="home">
+            <div style="display:inline-block;"><span style="margin-bottom: 12px;">House</span><br><span>1 BHK</span>
+            </div>
+  <div style="text-align:center;display:inline-block;margin-left:225px;margin-top:10px;margin-bottom:-10px;">
+      <span>Bengaluru</span><br><span class="text-muted">HSR Layout</span>
+  </div>
+
+
+<div class="arrow">
+                      <span  class="text_color" style="">Jul 13 at 07:00 PM
+</span>
+
+<div class="line"></div>
+<div class="point"></div>
+</div>
+<div style="text-align:center;display:inline-block;margin-top:-20px;margin-left:750px;"><span>Chennai</span><br><span class="text-muted">Mehandipattanam</span>
+</div>
+  <div class="row"><!-- for view move details button -->
+    <div class="col text-center">
+      <button class="btn btn-default bgcolor" onclick="show('id3');">View Move Details</button>
+    </div>
+  </div>
+  <h4 class="text-right" style="margin-left:1015px; margin-top:-30px;"><b>Move Completed</b></h4>
+            <hr style="margin-left: -15px;margin-right: -15px;"><!-- for horizontal line at the bottom -->
+            <div style="display:inline-block;">
+                <span>Order Date:<span class="text_color">Jul 13 at 07:00 PM</span>
+                </span>
+                <span style="margin-left:651px;">Vendor: <span class="text_color">Pan Packers</span>
+                    Order Total:<span class="text_color">25,000</span>
+                </span>
+            </div>
+        </div>
+       
+        <br>
+        
+        <!--for third view more details-->
+        
+         <div class="container" id="id3" style="display:none"><!-- for expand view of button -->
+            <div class="container border"><a href="#" style="text-decoration: underline;">BX1255</a><br>
+            <img src="house-256.png" height="60" width="60" alt="home">
+            <div style="display:inline-block;"><span style="margin-bottom: 12px;">House</span><br><span>1 BHK</span>
+            </div>
+  <div style="text-align:center;display:inline-block;margin-left:225px;margin-top:10px;margin-bottom:-10px;">
+      <span>Bengaluru</span><br><span class="text-muted">HSR Layout</span>
+  </div>
+
+
+<div class="arrow">
+                      <span  class="text_color" style="">Jul 13 at 07:00 PM
+</span>
+
+<div class="line"></div>
+<div class="point"></div>
+</div>
+<div style="text-align:center;display:inline-block;margin-top:-20px;margin-left:750px;"><span>Chennai</span><br><span class="text-muted">Mehandipattanam</span>
+</div><h4 class="text-right" style="margin-left:1015px; margin-top:-30px;">View Quote</h4>
+                     <hr style="margin-left: -15px;margin-right: -15px;"><!-- for horizontal line at the bottom -->
+            <div style="display:inline-block;">
+                <span>Order Date:<span class="text_color">Jul 13 at 07:00 PM</span>
+                </span>
+                <span style="margin-left:651px;">Vendor: <span class="text_color">Pan Packers</span>
+                    Order Total:<span class="text_color">25,000</span>
+                </span>
+            </div>
+   
+        </div>
+            <div class="container"><div class="container borderprop1">
+                <header class="bgcolor"><h4><span class="text-left">Item details</span><span style="float:right;">Edit</span>
+                    </h4>
+            </header>
+                <div class="row" style="font-size:13px;">
+                    <div class="col-md-6"><p class="borderprop">Living room</p>
+                        <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+                    
+ <div class="col-md-6"><p class="borderprop">Other</p>
+         <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div></div>
+
+                </div>
+ <div class="row">
+                    <div class="col-md-6"><p class="borderprop">Bedroom</p>
+                        <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+</div>
+                    
+ <div class="row">
+                    <div class="col-md-6"><p class="borderprop">Kitchen</p>
+                        <div class="flex-container">
+  <div>1<br>center table</div>
+  <div>2 <br>center table</div>
+  <div>3 <br>center table</div>  
+  <div>4 <br>center table</div>
+  <div>5 <br>center table</div>
+</div>
+</div>
+</div>                
+ </div>
+ </div>
+             <br>
+              <div class="row">
+                <div class="col-md-6"><span class="borderprop3"> Detail of existing house </span><span> &nbsp;
+Floor No </span><span> &nbsp;
+4 </span><span>&nbsp;Bevator &nbsp;</span>
+                    <span class="borderprop2"> Yes </span></div>
+                <div class="col-md-6"><span> Packing &nbsp;
+</span><span class="borderprop2"> Yes &nbsp;</span><span> &nbsp;Approx distance door to truck parking&nbsp; </span>
+                    <span class="borderprop2"> 50 </span><span class="borderprop2"> Meter </span></div>
+
+        </div>
+    <br>
+        <div class="row">
+                <div class="col-md-6"><span class="borderprop3"> Detail of new house &nbsp;&nbsp;&nbsp;</span>
+                    <span> &nbsp; Floor No &nbsp; </span><span>  &nbsp;4 &nbsp;</span>
+                    <span> &nbsp;Bevator &nbsp;</span>
+                    <span class="borderprop2"> &nbsp;Yes </span>
+                </div>
+               <div class="col-md-6"><span> Packing&nbsp;
+</span><span class="borderprop2"> Yes &nbsp;&nbsp; </span><span> &nbsp;Approx distance door to truck parking &nbsp;</span>
+                    <span class="borderprop2"> 50 </span><span class="borderprop2"> Meter </span>
+               </div>
+
+        </div><br>
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-default bgcolor" onclick="hide('id3');">Back to my move plan</button>
+    </div>
+  </div>
+ </div>
+        <!--function for showing and hiding the elements -->
+        
+        <script type="text/javascript">
+function show(elementId) { 
+        if(elementId==="id1"){document.getElementById('id1').style.display="block";}
+        if(elementId==="id2"){document.getElementById('id2').style.display="block";}
+        if(elementId==="id3"){document.getElementById('id3').style.display="block";}
+    }
+function hide(elementId){
+ if(elementId==="id1"){document.getElementById('id1').style.display="none";}
+ if(elementId==="id2"){document.getElementById('id2').style.display="none";}
+ if(elementId==="id3"){document.getElementById('id3').style.display="none";}
+}
+
+
+</script>
+
+    </body>
+</html>
